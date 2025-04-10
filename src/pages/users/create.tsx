@@ -1,9 +1,10 @@
-import { Box, Button, Center, Checkbox, Group, TextInput } from "@mantine/core";
+import { Box, Button, Center, Group, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useCallback } from "react";
-import { api } from "../services/api";
+import { api } from "../../services/api";
 
-export default function FormUser() {
+
+export default function UserCreatePage() {
   const form = useForm({
     mode: "uncontrolled",
     onSubmitPreventDefault: "always",

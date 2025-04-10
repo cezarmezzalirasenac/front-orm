@@ -1,10 +1,11 @@
 import { Box, Flex, Text } from "@mantine/core";
 import { useEffect, useState } from "react";
-import { api } from "../services/api";
+import { api } from "../../services/api";
+
 
 let didInit = false; // evita duplo carregamento da API
 
-export default function Home() {
+export default function UserListPage() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
